@@ -6,3 +6,6 @@ This is the Unit 1 Branch, where we can find the work done for the data mining c
 
 ###
 Practice 2 wass addes to repository
+
+##
+Practice 3 was added to branch so programming partner can continuie
