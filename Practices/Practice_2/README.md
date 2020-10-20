@@ -10,6 +10,8 @@ Practice 2 wass addes to repository
 ##
 Practice 3 was added to branch so programming partner can continuie
 
+Practice 2
+
 In this practice, we learn what kind of functions the R programming language can offer, we needed to find and show how 20 functions worked, many of them ar arithmetic based meaning that is used to format number results based on how we want to show them.
 
 Some examples:
