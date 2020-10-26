@@ -24,9 +24,26 @@ merged <- merge(stats, life, by.x ="Country.Code",)
 
 #created a dataset using the info provited from the previously merged data where only the data from the year 1960 is shown using filters 
 newset1960 <-merged[merged$Year==1960,]
+newset1960
 
 #created a dataset using the info provited from the previously merged data where only the data from the year 2013 is shown using filters
 newset2013 <-merged[merged$Year==2013,]
+newset2013
+
+ # continuation from programing partner 
+
+#create the plots from the both of the filter datasets 
+
+#dataset that only has data  from 1960 classifying by region
+qplot(data = newset1960, x =Fertility.Rate , y = life.expentancy.1960,
+    color = Region, size=I(3), shape=I(19), alpha =I(.4), 
+      main = "Fertility rate vs life expentancy in 1960")
+
+
+#dataset that only has from 2013 classifying by region
+qplot(data = newset2013, x =Fertility.Rate , y = life.expentancy.2013,
+      color = Region, size=I(3), shape=I(19), alpha =I(.4), 
+      main = "Fertility rate vs life expentancy in 2013")
 
 
 
