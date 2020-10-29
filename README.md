@@ -45,3 +45,7 @@ This is the Unit 1 Branch, where we can find the work done for the data mining c
 
 [Leonardo Sañudo resarch 1](https://github.com/daniel521221/Data_Mining/blob/Unit_1/Resarch/Sa%C3%B1udo%20Camacho%20Leonardo/Resarch1.md)
 
+
+## Evaluation
+
+[Practice 3](https://github.com/daniel521221/Data_Mining/blob/Unit_1/Evaluation/Readme.md)
