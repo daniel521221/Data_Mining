@@ -32,7 +32,7 @@
 </center>
 
 # Unit_2 Branch
-This is the Unit 2 Branch, where we can find the work done for the data mining class
+This is the Unit 2 Branch, where we can find the work done for the data mining class in where we learnd different functions of the ggplot2() library and how the grammar o the graphics work
 
 ## Practices
 ## Resarch
