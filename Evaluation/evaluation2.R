@@ -21,3 +21,11 @@ ploting + geom_jitter(aes(size=Budget...mill.,color=Studio)) +
   #Coding partner
   
 
+  theme (text = element_text(size=8)) + 
+  ggtitle ("      Domestic Gross % by Genre") + 
+  theme (plot.title = element_text(size=rel(2),  vjust=2, face="bold", color="black", lineheight=1.5)) + 
+  
+  
+  labs(x = "Genre",y = "Grass % US") + 
+  theme(axis.title.x = element_text(face="bold", vjust=-0.5, colour="purple", size=rel(1.5))) +
+  theme(axis.title.y = element_text(face="bold", vjust=1.5, colour="purple", size=rel(1.5)))
