@@ -4,7 +4,7 @@ One way to add additional variables is with aesthetic ones. Another particularly
 gplot(mtcars, aes(mpg, qsec)) + geom_point(aes(size = hp), alpha = 0.4)
 + facet_grid(factor(cyl)~factor(am))
 ```
-
+![127181915_393359075148132_6305185708925788826_n](https://i.imgur.com/HCarF7w.png)
 
 ## 2.geom_point
 The color, size, and shape of the points can be changed using the geom_point () function as follows:
@@ -13,7 +13,7 @@ The color, size, and shape of the points can be changed using the geom_point () 
 ```R
 geom_point(size, color, shape)
 ```
-
+![126166515_207612147433625_2846989047895793777_n](https://i.imgur.com/835hXfn.png)
 
 
 ## 3.geom_bar
@@ -24,6 +24,7 @@ Now we can make a bar chart from this data.
 p <- ggplot(mtcars, aes(factor(cyl)))
 p + geom_bar()
 ```
+![127766440_285323376255597_8693480949622181775_n](https://i.imgur.com/f3wxonn.png)
 
 ## 4.geom_line
 
@@ -36,7 +37,7 @@ ggplot(economics_long, aes(date, value01)) +
   geom_line(aes(linetype = variable))
 
 ```
-
+![51982089_534976677012699_989964282118537216_n](https://i.imgur.com/oDtn9EA.png)
 
 
 ## 5.geom_histogram
@@ -51,7 +52,7 @@ geom_histogram(position = 'stack', stat = 'bin')
 
 ```
 
-
+![126074908_117254120089122_2503215268108980641_n](https://i.imgur.com/wcqsYsJ.png)
 
 
 
