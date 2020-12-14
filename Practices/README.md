@@ -1,48 +1,97 @@
+#### We import the data set
+``dataset <- read.csv(file.choose())``
 
-![tec](https://i.imgur.com/DKIVS3c.png)
+#### Categorical data encoding
+``dataset$State = factor(dataset$State,
+                      levels = c('New York', 'California', 'Florida'),
+                      labels = c(1,2,3))
+dataset``
 
-<center>
+#### We set our seed of randomness
+``set.seed(123)``
 
-### TECNOLÓGICO NACIONAL DE MÉXICO
+#### We divide the data set into the training set and the test set
+``split <- sample.split(dataset$Profit, SplitRatio = 0.8)
+training_set <- subset(dataset, split == TRUE)
+test_set <- subset(dataset, split == FALSE)``
 
-### INSTITUTO TECNOLÓGICO DE TIJUANA
+#### We adapt the multiple linear regression to the training set
+``#regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend + State)
+regressor = lm(formula = Profit ~ .,
+               data = training_set )``
 
-### SUBDIRECCIÓN ACADÉMICA
+#### Showing results
+``summary(regressor)``
 
-### DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN
+#### Prediction of test set results
+``y_pred = predict(regressor, newdata = test_set)``
 
-### SEMESTRE
+#### Showing results
+``y_pred``
 
-### Agosto - Diciembre 2020
+#### Assignment: Visualize Simple Linear Regression Model with R.D.Spend
 
-### Data Mining
+# 
 
-## EQUIPO:
+By building the optimal model using backward elimination, we can view each iteration as a procedure to obtain the optimal model.
 
-### SAÑUDO CAMACHO LEONARDO DANIEL 15212166
+### 1st iteration
+``regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend + State,
+               data = dataset )
+summary(regressor)``
 
-### LOPEZ GONZALEZ ANGEL URIEL C16210548
+### 2nd iteration
+``regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend,
+               data = dataset )
+summary(regressor)``
 
-## DOCENTE:
+### 3rd iteration
+``regressor = lm(formula = Profit ~ R.D.Spend + Marketing.Spend,
+               data = dataset )
+summary(regressor)``
 
-### JOSE CHRISTIAN ROMERO HERNANDEZ
+### 4th iteration
+``regressor = lm(formula = Profit ~ R.D.Spend + Marketing.Spend,
+               data = dataset )
+summary(regressor)``
 
-### TIJUANA, BAJA CALIFORNIA, MÉXICO
+#### Now we can say that we have an optimal model, so we use our prediction with the test data set.
+``y_pred = predict(regressor, newdata = test_set)
+y_pred``
 
-</center>
+## Task: Analyze the Back Automation Trace Delete Function
 
-# Unit_3 Branch
-This is the Unit 3 Branch
+Backward elimination is used to select all predictors in the model, but only as a kind of initial procedure, then you iteratively remove the least contributing predictors and stop when you have a model where all predictors are statistically significant. In other words, it's like cleaning the model to make it as optimal as possible.
 
-## Practices
+##### we use the backwardElimination to select all the predictors
+##### in the model but just as an starting kind of procedure, then iteratively 
+##### removes the least contributive predictors, and stops when you have a model 
+##### where all predictors are statistically significant. In other words, is like
+##### cleaning up the model to get it as optimal as we can.
+
+``backwardElimination <- function(x, sl) {
+  numVars = length(x)
+  for (i in c(1:numVars)){
+    regressor = lm(formula = Profit ~ ., data = x)
+    maxVar = max(coef(summary(regressor))[c(2:numVars), "Pr(>|t|)"])
+    if (maxVar > sl){
+      j = which(coef(summary(regressor))[c(2:numVars), "Pr(>|t|)"] == maxVar)
+      x = x[, -j]
+    }
+    numVars = numVars - 1
+  }
+  return(summary(regressor))
+}``
+
+#### Finally we use our training set and our variable SL as parameters for our backward elimination method.
+
+``SL = 0.05``
+``dataset = dataset[, c(1,2,3,4,5)]
+training_set
+backwardElimination(training_set, SL)``
 
 
-
-## Resarch
-
-
-
-## Evaluation
+Result
 
 
 
