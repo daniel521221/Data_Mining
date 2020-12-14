@@ -93,5 +93,5 @@ backwardElimination(training_set, SL)``
 
 Result
 
-
+![131088949_728763611101110_811996566740418021_n](https://i.imgur.com/xFaZBrb.png)
 
