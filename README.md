@@ -36,12 +36,26 @@ This is the branch of unit 3 where we will find the work done on the binomial an
 
 ## Practices
 [Practice 1](https://github.com/daniel521221/Data_Mining/blob/Unit3/Practices/Practice_1.md)
+
+
 [Practice 2](https://github.com/daniel521221/Data_Mining/blob/Unit3/Practices/Practice_2.md)
+
+
 [Practice 3](https://github.com/daniel521221/Data_Mining/blob/Unit3/Practices/Practice_3.md)
+
+
 [Practice 4](https://github.com/daniel521221/Data_Mining/blob/Unit3/Practices/Practice_4.md)
+
+
 [Practice 5](https://github.com/daniel521221/Data_Mining/blob/Unit3/Practices/Practice_5.md)
+
+
 [Practice 6](https://github.com/daniel521221/Data_Mining/blob/Unit3/Practices/Practice_6.md)
+
+
 [Practice 7](https://github.com/daniel521221/Data_Mining/blob/Unit3/Practices/Practice_7.md)
+
+
 [Practice 8](https://github.com/daniel521221/Data_Mining/blob/Unit3/Practices/Practice_8.md)
 
 ## Resarch
