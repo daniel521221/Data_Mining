@@ -48,7 +48,15 @@ This is the branch of unit 3 where we will find the work done on the binomial an
 
 
 [Leonardo Sañudo Machine Learning](https://github.com/daniel521221/Data_Mining/blob/Unit3/Tasks/Leonardo_Sa%C3%B1udo/Machine%20Learning.md)
+
+
 [Leonardo Sañudo Scale Function](https://github.com/daniel521221/Data_Mining/blob/Unit3/Tasks/Leonardo_Sa%C3%B1udo/Scale%20Function.md)
+
+
+[Lopez Gonzalez Machine Learning](https://github.com/daniel521221/Data_Mining/blob/Unit3/Tasks/Uriel_Gonzalez/machine%20learning.md)
+
+
+[Lopez Gonzalez Scale Function](https://github.com/daniel521221/Data_Mining/blob/Unit3/Tasks/Uriel_Gonzalez/Scale%20Function.md)
 
 ## Evaluation
 
