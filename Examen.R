@@ -19,3 +19,23 @@ plot(1:10,
      ylab = 'WCSS')
 
 
+# Fitting K-Means to the dataset
+set.seed(29)
+kmeans = kmeans(x = iris, centers = 3)
+y_kmeans = kmeans$cluster
+
+# Visualising the clusters
+# install.packages("cluster")
+library(cluster)
+clusplot(iris,
+         y_kmeans,
+         lines = 0,
+         shade = TRUE,
+         color = TRUE,
+         labels = 2,
+         plotchar = FALSE,
+         span = TRUE,
+         main = paste('Clusters of Iris'),
+         xlab = 'Length',
+         ylab = 'Width')
+
